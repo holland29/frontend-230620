@@ -13,3 +13,12 @@ npm i -g typescript
 tsc --version
 
 //터미널 환경에 외부 코드 붙여넣기 단축키 : shift + insert
+
+// cd 파일이름 : 해당 디렉터리(폴더)로 이동
+// cd .. : 이전 디렉터리(폴더)로 이동
+
+// 타입스크립트 코드를 ES5로 변환하고 실행까지 동시에 하려면 ts-node라는(하이픈) 프로그램
+// npm i -g ts-node
+
+// ts-node -v 명령어로 프로그램의 버전을 확인합니다.
+//* ts-node -v : v10.9.1

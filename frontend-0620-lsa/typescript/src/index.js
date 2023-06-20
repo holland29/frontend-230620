@@ -1,4 +1,6 @@
 "use strict";
+// import { testMakePerson } from "./utils/makePerson";
 Object.defineProperty(exports, "__esModule", { value: true });
-const makePerson_1 = require("./utils/makePerson");
-(0, makePerson_1.testMakePerson)();
+// testMakePerson()
+const modules_1 = require("./modules");
+(0, modules_1.testMakePerson2)();

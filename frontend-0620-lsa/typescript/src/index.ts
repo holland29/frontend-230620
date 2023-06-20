@@ -1,3 +1,6 @@
-import { testMakePerson } from "./utils/makePerson";
+// import { testMakePerson } from "./utils/makePerson";
 
-testMakePerson()
+// testMakePerson()
+
+import { testMakePerson2 } from "./modules";
+testMakePerson2();
