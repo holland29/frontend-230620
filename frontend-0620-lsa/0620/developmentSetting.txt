@@ -1,0 +1,15 @@
+// 터미널에서 git bash 실행 이후 작업폴더 옆에 키워드가
+(master)이라고 지정되어 있는 경우에 해당 명령어로 branch 변경
+git branch -M main 
+
+// Node.js와 npm 설치 확인 방법
+node -v : v18.16.0
+npm -v : 9.5.1
+
+// 타입스크립트 최신 버전을 전역으로 설치하려면 다음 명령어를 실행합니다.
+npm i -g typescript
+
+// 타입스크립트 컴파일러(typescript compiler)와 클라이언트(client)
+tsc --version
+
+//터미널 환경에 외부 코드 붙여넣기 단축키 : shift + insert
