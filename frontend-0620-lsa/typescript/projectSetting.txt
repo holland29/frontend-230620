@@ -1,0 +1,53 @@
+typescript 폴더가 생성되며 그 안에 package.json 파일이 생성
+//* mkdir typescript
+//* cd typescript
+//* npm init -y
+
+이 옵션으로 설치하면 해당 패키지 정보가 package.json 파일에 자동으로 기록됩니다.
+//* --save : 프로젝트를 실행할 때 필요한 패키지로 설치합니다. 패키지 정보가 package.json 파일의 'dependencies' 항목에 등록됩니다.
+//* 단축명령 : -S
+
+//* --save-dev : 프로젝트를 개발할 때만 필요한 패키지로 설치합니다. 패키지 정보가 package.json 파일의 'devDependencies'항목에 등록됩니다.
+//* 단축명령 : -D
+
+npm i -D typescript ts-node
+
+// Node.js(자바스크립트 라이브러리)를 타입스크립트에서 사용할 때는 해당 라이브러리의 타입 정의가 필요
+npm i -D @types/node
+
+//* 
+이미 생성된 타입스크립트 파일을 받아서 해당 폴더를 사용하는 경우
+보통 프로젝트를 구현하면서 여러 패키지를 설치하기 때문에 node_modules 디렉터리 크기는 아주 큽니다.
+
+그래서 다른 사람에게 프로젝트를 전달할 때는 node_modules 디렉터리를 모두 지우고 전달하는 것이 일반적입니다.
+
+그렇기 때문에 다른 사람이 작성한 프로젝트를 전달받아서 이용할 때에는 해당 디렉터리가 있는지 확인 후 없을 경우 package.json 파일이 있는 디렉터리에서 npm i 명령을 실행합니다.
+
+그러면 package.json에 등록된 패키지들이 node_modules에 자동으로 설치됩니다.
+
+// projectSetting.txt 에 아래 내용 복사 붙여넣기
+
+프로젝트 이용자 관점에서 패키지 설치
+// package.json 파일이 있는 디렉터리(폴더)에서 아래 명령 실행
+// npm i
+// 해당 명령 실행 시 package.json에 등록된 패키지들이 node_modules 디렉터리에 자동으로 설치
+
+tsconfig.json 파일생성
+tsc --init
+
+// src 폴더생성 + utils 폴더생성
+mkdir -p src/utils
+
+src폴더 안에 index.ts 파일과
+utils 안에 makePerson.ts 파일을 생성
+
+// 소스 파일명이 index이면 파일명을 생략하고 단순히 ts-node .src로 실행할 수 있습니다.
+ts-node ./src/index.ts
+ts-node .src
+
+// dev 명령의 경우 개발 중에 src 디렉터리에 있는 index.ts 파일을 실행하는 용도로 사용하며,
+// build 명령은 개발이 완료된 후 프로그램을 배포하기 위해 dist 디렉터리에 자바스크립트 파일을 만들 때 사용
+"dev" : "ts-node src",
+"build" : "tsc && node dist"
+
+>> 'npm run 명령'형태로 사용
