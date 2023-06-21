@@ -11,12 +11,24 @@
 - 언어 서비스 : 타입 검사기를 사용해 비주얼 스튜디오 코드(VS Code)와 같은 편집기에 개발자에게 유용한 유틸리티 제공법을 알려주는 프로그램
 *****
 
-VSCode 확장기능
+VSCode 확장기능 추천 
+// Prettier와 ESLint는 되도록 설치해주세요 //
+// Prettier는 코드의 포맷팅을 담당하고, ESLint는 코드의 품질과 잠재적인 문제점을 확인하는 데 사용 //
 
-Better Comments
-Color Highlight
-// eslint
-indent-rainbow
-material Icon Theme
-// Prettier
-vscode-icons
+1. Better Comments
+-> 주석 꾸미기
+
+2. Color Highlight
+-> CSS적용 시 소스코드에서 색상 확인 가능
+
+3. eslint
+-> JavaScript 및 JSX 코드에 대해 정적 분석을 수행 / 일관성 있는 코드 작성, 잠재적 에러와 안티 패턴 찾기에 도움
+
+4. indent-rainbow
+-> 띄어쓰기/탭을 색상으로 구분
+
+5. material Icon Theme & vscode-icons
+-> 폴더 또는 파일의 아이콘 꾸미기 ( 둘 중 하나 택 )
+
+6. Prettier
+-> 코드 포매터, 코드를 일관된 스타일로 자동으로 포맷팅하는 도구
