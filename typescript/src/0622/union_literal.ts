@@ -102,3 +102,26 @@ student3 = "jeong bin";
 // student3 = true;
 
 //! 리터럴 할당 가능성
+
+let student4: "sung min";
+
+student4 = "sung min";
+// student4 = "seung ah"; // '"seung ah"' 형식은 '"sung min"' 형식에 할당할 수 없습니다.
+
+let student5 = ""; // 타입 : string
+// student4 = student5; // 'string' 형식은 '"sung min"' 형식에 할당할 수 없습니다.
+
+student5 = ":)"; // 변수 할당
+
+//! 타입 별칭
+
+// let color: "red" | "blue" | "green" | "gray";
+// let color2: "red" | "blue" | "green" | "gray";
+// let color3: "red" | "blue" | "green" | "gray";
+
+// 기본형 : type 새로운 이름 = 타입
+type colors = "red" | "blue" | "green" | "gray";
+
+let color: colors;
+let color2: colors;
+let color3: colors;
