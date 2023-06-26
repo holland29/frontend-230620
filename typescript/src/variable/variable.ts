@@ -31,7 +31,7 @@ function constExample() {
     // console.log(constVariable); // Conference Error
     const constVariable = 'Hello Const';
     console.log(constVariable); // Hello Const
-    // constVariable = 'Bye Const'; // Error
+    // constVariable = 'Bye Const'; // Error : 재할당 불가
 }
 
 constExample();
