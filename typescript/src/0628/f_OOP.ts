@@ -43,7 +43,7 @@ let myVehicle: Vehicle$ = new Vehicle$();
 myVehicle.drive(); // Driving a vehicle...
 
 let myCar$: Vehicle$ = new Car$();
-myCar.drive(); // Driving a car...
+myCar$.drive(); // Driving a car... //#############
 
 //! 추상클래스와 인터페이스
 // 추상클래스
@@ -64,7 +64,7 @@ class Car_$ implements Drivable {
 }
 
 let myCar_$: Drivable = new Car_$();
-myCar.drive(); // Driving a car...
+myCar_$.drive(); // Driving a car... //#############
 
 //! 접근 제어자와 프로퍼티
 // 접근제어자 : public, private, protected
