@@ -9,6 +9,9 @@ type Props = {
 // props를 사용하는 자식 컴포넌트를 정의
 const Welcome: React.FC<Props> = (props: Props) => {
     return <h1>Hello, {props.name}</h1>;
+    // props내부의 값을 조회할 때마다 props.을 입력
+    // 이를 비구조화 할당
+
 }
 
 // 부모 컴포넌트에서 자식 컴포넌트를 사용하고, props를 통해 데이터를 전달

@@ -6,7 +6,11 @@ import Components from './components';
 import Prop from './props/prop02';
 import State from './state';
 import Effect from './effect';
+import Hello from './props/hello';
 import Todo from './views/Practice';
+import Wrapper from './props/Wrapper';
+import Input from './views/Input';
+import ArrayRender from './views/ArrayRendering/application';
 
 function App() {
   return (
@@ -23,8 +27,14 @@ function App() {
     element속성: 컴포넌트를 지정
     */}
       <Routes>
+        <Wrapper>
+          <Route path='hello' element={<Hello color='red'/>}/>
+        </Wrapper>
         <Route path='/' element={<Components />}/>
+        <Route path='hello' element={<Hello color='blue' name='Seugnah'/>}/>
         <Route path='/props' element={<Prop name='Seungah'/>}/>
+        <Route path='/input' element={<Input />}/>
+        <Route path='/arrayRendering' element={<ArrayRender />}/>
       </Routes>
     </>
   );
