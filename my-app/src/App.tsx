@@ -41,6 +41,7 @@ function App() {
         <Route path="/props" element={<Prop name="Seungah" />} />
         <Route path="/input" element={<Input />} />
         <Route path="/arrayRendering" element={<ArrayRender />} />
+        <Route path="/array" element={<Array />} />
       </Routes>
     </>
   );
