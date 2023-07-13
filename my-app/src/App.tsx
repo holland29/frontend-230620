@@ -28,6 +28,7 @@ function App() {
     element속성: 컴포넌트를 지정
     */}
       <Routes>
+        <Route path="/" element={<Components />} />
         <Route
           path="hello"
           element={
@@ -36,12 +37,10 @@ function App() {
             </Wrapper>
           }
         />
-        <Route path="/" element={<Components />} />
         <Route path="hello" element={<Hello color="blue" name="Seugnah" />} />
         <Route path="/props" element={<Prop name="Seungah" />} />
         <Route path="/input" element={<Input />} />
         <Route path="/arrayRendering" element={<ArrayRender />} />
-        <Route path="/array" element={<Array />} />
       </Routes>
     </>
   );
