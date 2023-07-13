@@ -27,10 +27,8 @@ function App() {
     element속성: 컴포넌트를 지정
     */}
       <Routes>
-        <Wrapper>
-          <Route path='hello' element={<Hello color='red'/>}/>
-        </Wrapper>
         <Route path='/' element={<Components />}/>
+        <Route path='hello' element={<Wrapper><Hello color='red'/></Wrapper>}/>
         <Route path='hello' element={<Hello color='blue' name='Seugnah'/>}/>
         <Route path='/props' element={<Prop name='Seungah'/>}/>
         <Route path='/input' element={<Input />}/>
