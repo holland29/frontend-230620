@@ -1,3 +1,4 @@
+import React from 'react';
 import { ChangeEvent, RefObject, useRef,  useState } from 'react'
 
 // 특정 DOM을 선택할 때: ref를 사용

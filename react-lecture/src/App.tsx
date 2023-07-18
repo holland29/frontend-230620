@@ -12,6 +12,9 @@ import Todo from "./views/Practice";
 import Wrapper from "./props/Wrapper";
 import Input from "./views/Input";
 import ArrayRender from "./views/ArrayRendering/application";
+import Greeting from './views/Greeting/Greeting';
+import CustomHooks from './hooks/index'
+import CustomHooksPractice from './hooks/Practice'
 
 function App() {
   const onClick = () => {
@@ -49,6 +52,9 @@ function App() {
       <Route path="/input" element={<Input />} />
       <Route path="/arrayRendering" element={<ArrayRender />} />
       <Route path="/array" element={<Array />} />
+      <Route path="/greeting" element={<Greeting name="Hello" onClick={onClick}/>} />
+      <Route path="/customHooks" element={<CustomHooks/>} />
+      <Route path="/customHooksPractice" element={<CustomHooksPractice/>} />
     </Routes>
   </>
   );
