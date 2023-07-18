@@ -15,6 +15,8 @@ import ArrayRender from "./views/ArrayRendering/application";
 import Greeting from './views/Greeting/Greeting';
 import CustomHooks from './hooks/index'
 import CustomHooksPractice from './hooks/Practice'
+import ContextApi from './contextAPI'
+import ContextApiLogIn from './contextAPI/Practice'
 
 function App() {
   const onClick = () => {
@@ -55,6 +57,8 @@ function App() {
       <Route path="/greeting" element={<Greeting name="Hello" onClick={onClick}/>} />
       <Route path="/customHooks" element={<CustomHooks/>} />
       <Route path="/customHooksPractice" element={<CustomHooksPractice/>} />
+      <Route path="/contextApi" element={ <ContextApi/>} />
+      <Route path="/contextApiLogIn" element={ <ContextApiLogIn/>} />
     </Routes>
   </>
   );
