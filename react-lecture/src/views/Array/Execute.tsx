@@ -1,6 +1,11 @@
 import React, { ChangeEvent, FC, useCallback, useMemo, useRef, useState } from 'react'
 import CreateUser from './CreateUser';
 import UserList from './UserList';
+import { styled } from 'styled-components';
+
+const Button = styled.button`
+  color: ${props => props.theme.theme}
+`;
 
 type User = {
   id: number;
@@ -130,6 +135,7 @@ const Execute: FC = () => {
       <CreateUser username={username} email={email} onChange={onChange} onCreate={onCreate}/>
       <UserList users={users} onRemove={onRemove} onToggle={onToggle}/>
       <div>활성 사용자 수 : {count} </div>
+      <Button>스타일 컴포넌트 예시</Button>
     </>
   )
 }
