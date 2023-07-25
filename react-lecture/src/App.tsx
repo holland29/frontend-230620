@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 
 import Array from './views/Array/Execute';
 import Components from "./components";
@@ -22,6 +22,9 @@ import StyledComponents2 from './styledComponents/practice'
 import FetchAPI from './restAPI/PostListFetch'
 import AxiosAPI from './restAPI/PostListAxios'
 import AsyncAPI from './restAPI/PostListAsync'
+import Zustand from './zustand/index'
+import ZustandId from './zustand/views'
+import ZustandCheck from './zustand/views/check'
 
 function App() {
   const onClick = () => {
@@ -69,6 +72,9 @@ function App() {
       <Route path="/fetchAPI" element={ <FetchAPI/>} />
       <Route path="/axiosAPI" element={ <AxiosAPI/>} />
       <Route path="/asyncAPI" element={ <AsyncAPI/>} />
+      <Route path="/zustand" element={ <Zustand/>} />
+      <Route path="/zustandId" element={ <ZustandId/>} />
+      <Route path="/zustandCheck" element={ <ZustandCheck/>} />
     </Routes>
   </>
   );
